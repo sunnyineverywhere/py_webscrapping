@@ -5,7 +5,7 @@ import re
 # ca?e
 # care, cafe, case, cave...
 
-p = re.compile("ca.e")
+p = re.compile("ca.e")  # complie 안에 "원하는 형태"
 # . : 하나의 문자를 의미
 # ^ : 문자열의 시작을 의미
 # $ : 문자열의 끝을 의미
@@ -30,5 +30,5 @@ print_match(m)
 m = p.search("good care")  # search : 주어진 문자열중에 매치되는 게 있는지 확인함
 print_match(m)
 
-lst = p.findall("careless care cafe")  # findall : 일치하는 모든 것을 ㅣ스트 형태로 반환
+lst = p.findall("careless care cafe")  # findall : 일치하는 모든 것을 리스트 형태로 반환
 print(lst)
